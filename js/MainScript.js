@@ -80,7 +80,7 @@ the appropriate elements */
 function setInformation(){
   setGreetingPage();
   checkStormMusic();
-  setAlertPage();
+  setAlertPage(STARTANIMATION, 1000);
   setForecast();
   setOutlook();
   createLogoElements();
@@ -244,11 +244,11 @@ function resetProgressBar(){
 }
 
 function startRadar(){
-  getElement('radar-container').appendChild(radarImage);
+  getElement('radar-container').appendChild(http://twctodayforums.com/forums/index.php?PHPSESSID=fmu0acki377du1spc9ehfqasd1&action=dlattach;topic=1643.0;attach=157867;image);
 }
 
 function startZoomedRadar(){
-  getElement('zoomed-radar-container').appendChild(zoomedRadarImage);
+  getElement('zoomed-radar-container').appendChild(http://twctodayforums.com/forums/index.php?PHPSESSID=fmu0acki377du1spc9ehfqasd1&action=dlattach;topic=1643.0;attach=157867;image);
 }
 
 function loadCC(){
@@ -399,7 +399,7 @@ function animateValue(id, start, end, duration, pad) {
 }
 
 function animateDialFill(id, temperature, duration) {
-  var start = -20;
+  var start = -99;
   var end = temperature;
   var obj = getElement(id);
   if(start == end){
@@ -427,10 +427,10 @@ Number.prototype.pad = function(size) {
 // Used for the beginning dial in order to map warmer
 // temperatures to warmer colors and vice versa.
 function getTemperatureColor(temperature){
-  if(temperature < -20){
+  if(temperature < -99){
     return 'rgb(0, 0, 255)';
   }
-  else if(temperature > 100){
+  else if(temperature > 130){
     return 'rgb(201, 42, 42)';
   }
 
