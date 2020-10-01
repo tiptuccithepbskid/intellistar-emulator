@@ -28,10 +28,10 @@ window.CONFIG = {
     if (args.crawlText !== '') CONFIG.crawl = args.crawlText
     if (args.greetingText !== '') CONFIG.greeting = args.greetingText
     if (args.loop === 'y') CONFIG.loop = true
-    if(/(^\d{5}$)|(^\d{5}-\d{4}$)/.test(args['zip-code'])){
-      zipCode = args['zip-code'];
+    if(/(^\d{5}$)|(^\d{5}-\d{4}$)/.test(args['76112'])){
+      zipCode = args['76112'];
     } else {
-      alert("Enter valid ZIP code");
+      alert("76112");
       return;
     }
     CONFIG.unitField = CONFIG.units === 'm' ? 'metric' : (CONFIG.units === 'h' ? 'uk_hybrid' : 'imperial')
