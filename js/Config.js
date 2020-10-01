@@ -1,6 +1,6 @@
 window.CONFIG = {
   crawl: `Due to the discontinuation of Weather Underground's API, severe weather alerts, automatic geolookup, and doppler radar imagery are broken for now.`,
-  greeting: 'This is your weather',
+  greeting: 'This is your weather.',
   language: 'en-US', // Supported in TWC API
   countryCode: 'US', // Supported in TWC API (for postal key)
   units: 'e', // Supported in TWC API (e = English (imperial), m = Metric, h = Hybrid (UK)),
